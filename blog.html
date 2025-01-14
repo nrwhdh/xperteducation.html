@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title> 
+
+<!--CSS style-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<!--CSS-->
+    <link rel="stylesheet" href="blog.css">
+<!--JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="blog.js"></script>
+</head>
+
+<!--Start-->
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"><span>X</span>PERT EDUCATION</a>
+        <nav class="navbar">
+            <a href="index.html">Homepage</a>
+            <a href="classes.html">Classes</a>
+            <a href="teachers.html">Teachers</a>
+            <a href="methods.html">Methods</a>
+            <a href="blog.html">Blogs</a>
+        </nav>
+    </header>
+
+<!--search bar-->
+    <div class="search-bar">
+        <form id="searchForm" onsubmit="searchPosts(event)">
+            <input type="text" id="searchInput" placeholder="Search blog posts..." required>
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+
+<!--blog-->
+    <div class="section">
+        <div class="row blog-posts">
+          
+            <div class="post">
+                <img src="outreachpro.jpeg" alt="Post Image">
+                <h2><a href="blog1.html">Slow reader? Your Child May Have Dyslexia</a></h2>
+                <p>1. Speech Delay Issues: Understanding the Signs...</p>
+                <a href="blog1.html">Read more</a>
+            </div>
+            
+            <div class="post">
+                <img src="childd.jpeg" alt="Post Image">
+                <h2><a href="blog2.html">The Impact of Reading Delays: 3 Effects on 6-years-old</a></h2>
+                <p>1. Losing interest in learning...</p>
+                <a href="blog2.html">Read more</a>
+            </div>
+            
+            <div class="post">
+                <img src="umaira.jpeg" alt="Post Image">
+                <h2><a href="blog3.html">8 Tips For Teaching your Child to Read</a></h2>
+                <p>1.Choose a Comfortable Place to Study...</p>
+                <a href="blog3.html">Read more</a>
+            </div>
+        </div>
+    </div>
+
+<!--FAQ-->
+    <div class="faq-container">
+        <div class="faq-header">Frequently Asked Questions (F.A.Q)</div>
+        <div class="faq-item">
+            <input type="checkbox" id="faq1" class="faq-input">
+            <label for="faq1" class="faq-title">
+                Q1. What subjects do XPERT Education offer?
+                <i class="fa fa-chevron-down"></i>
+            </label>
+            <div class="faq-content">
+                <p>XPERT Education offers Mathematics, Basic Science, English, and Reading .</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <input type="checkbox" id="faq2" class="faq-input">
+            <label for="faq2" class="faq-title">
+                Q2. Are there any given learning materials?
+                <i class="fa fa-chevron-down"></i>
+            </label>
+            <div class="faq-content">
+                <p>Yes, XPERT Education provides learning materials to support the courses.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <input type="checkbox" id="faq3" class="faq-input">
+            <label for="faq3" class="faq-title">
+                Q3. How experienced are the teachers from XPERT Education?
+                <i class="fa fa-chevron-down"></i>
+            </label>
+            <div class="faq-content">
+                <p>The teachers at XPERT Education are highly qualified, holding bachelor’s and master's degrees.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <input type="checkbox" id="faq4" class="faq-input">
+            <label for="faq4" class="faq-title">
+                Q4. How can I contact XPERT Education for more information?
+                <i class="fa fa-chevron-down"></i>
+            </label>
+            <div class="faq-content">
+                <p>You can contact XPERT Education at 04 300 7890 or email us at xperteducation@gmail.com for more information.</p>
+            </div>
+        </div>
+    </div>
+
+<!--comment-->
+    <div class="comments-section">
+        <h3>Leave a Comment</h3>
+        <form action="https://formspree.io/f/xjkklebq" method="POST">
+            <label>
+                email:
+                <input type="email" name="email">
+            </label>
+
+             <label>
+                <textarea name="comment" placeholder="Write your comment here..."></textarea></label>
+                <button type="submit">Post Comment</button>
+        </form>
+    </div>
+
+<!--footer-->
+    <footer>
+        <div class="footercontainer">
+            <div class="socialicons">
+                <a href="https://www.facebook.com/xpert.education.2025?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/xperts.education?igsh=MWplcHZjd2p5emY2OQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/60135621195" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.youtube.com/@XpertsEducation" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footernav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="teachers.html">Teachers</a></li>
+                    <li><a href="methods.html">Methods</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerbottom">
+            <p>Copyright &copy;2025; Designed by <span class="designer">XPERT Education</span></p>
+        </div>
+    </footer>
+</body>
+</html>

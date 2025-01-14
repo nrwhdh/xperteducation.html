@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+/*navbar*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur (10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.logo:hover{
+    color: turquoise;
+    text-shadow: 0 0 25px turquoise,
+                 0 0 25px;
+    transform: scale(1.1);
+}
+
+span{
+    color: turquoise;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: turquoise;
+    border-bottom: 3px solid turquoise;
+}
+/*content*/
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb ( 241, 241, 241);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+
+.home-content{
+    max-width: 800px;
+}
+
+.home-content h3{
+    font-size: 42px;
+}
+
+.home-content h1{
+    font-size: 62px;
+    line-height: 1.2;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+  
+/*image header*/
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("header.jpeg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+  
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+  
+.hero-text button {
+    border: none;
+    border-radius: 5rem;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+  
+.hero-text button:hover {
+    background-color: turquoise;
+    color: white;
+}
+
+/*content*/
+.spaced-text {
+    display: flex;
+    gap: 20px;
+    padding-left: 30px;
+    text-align: justify;
+    margin-top: 40px;
+}
+.text-content {
+    margin-top: auto;
+    flex: 3;
+}
+
+.text-content h1{
+    margin-bottom: 20px;
+    font-size: 50px;
+    margin-left: 2%;
+    
+}
+
+.text-content p{
+    margin-bottom: 20px;
+    font-size: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.child {
+    flex: 2;
+    margin-right: 5%;
+
+}
+.child img {
+    max-width: 100%;
+    height: 80%;
+    border-radius: 10px; 
+    margin-top: 100px;
+}
+
+/*map*/
+.location{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex;
+    align-items: center;
+   flex-direction: column;    
+}
+
+.locate{
+    margin-bottom: 60px;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+iframe{
+    width: 80%;
+    height: 500px;
+}
+
+/* Get In Touch*/
+
+.intouch-h1{
+    text-align: center;
+}
+
+.intouch {
+    display: flex; /* Align items horizontally */
+    justify-content: space-between; /* Distribute the locations evenly */
+    height: 50%;
+}
+
+.location {
+    display: flex;
+    flex-direction: column; /* Stack the icon on top and the text at the bottom */
+    align-items: center; /* Center the icon and text horizontally */
+    text-align: center; /* Ensure the text is centered under the icon */
+    margin-top: 5%;
+    
+}
+
+.location i {
+    font-size: 5em; /* Make the icon larger */
+    margin-bottom: 20px; /* Add space between icon and text */
+    color: turquoise; /* Icon color */
+}
+
+.location h3 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.2em; /* Text size */
+}
+
+/*Testimony*/
+
+.testimony-h1{
+    text-align: center;
+}
+
+.testimony-container {
+    padding-bottom: 50px;
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.testimony {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(33.333% - 20px); /* 3 items per row */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.testimony img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+}
+.testimony p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+.testimony .author {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+.checked {
+    color: orange;
+}
+@media (max-width: 768px) {
+    .testimony {
+        width: calc(50% - 20px); /* 2 items per row */
+    }
+}
+@media (max-width: 480px) {
+    .testimony {
+        width: 100%; /* 1 item per row */
+    }
+}
+
+/*footer*/
+
+footer{
+    background-color: #111;
+}
+
+.footercontainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialicons{
+    display: flex;
+    justify-content: center;
+}
+.socialicons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialicons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialicons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialicons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footernav{
+    margin: 30px 0;
+}
+
+.footernav ul{
+    display: flex;
+    justify-content: center;
+}
+
+.footernav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footernav ul li a:hover{
+    opacity: 1;
+    color: turquoise;
+}
+
+.footerbottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerbottom p{
+    color: white;
+}
+
+.designer{
+    color: turquoise;
+}
